@@ -1,0 +1,34 @@
+<p>basic-lessons works!</p>
+
+<!-- Ng If Condition Lessons -->
+
+<h1 *ngIf="show=='yes' then ifBlock else elseBlock">
+</h1>
+<ng-template #ifBlock>
+  <h1>if block</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>else block</h1>
+</ng-template>
+
+<ng-template [ngIf]="shows=='red'">
+  <h1>Red block</h1>
+</ng-template>
+<ng-template [ngIf]="shows=='green'">
+  <h1>Green block</h1>
+</ng-template>
+<ng-template [ngIf]="shows=='blue'">
+  <h1>Blue block</h1>
+</ng-template>
+
+<!-- Switch Case Condition Lessons -->
+
+<div [ngSwitch]="color">
+  <h2 style="color: red;" *ngSwitchCase="'red'">red color</h2>
+  <h2 style="color: green;" *ngSwitchCase="'green'">green color</h2>
+  <h2 style="color: blue;" *ngSwitchCase="'blue'">blue color</h2>
+  <h2 style="color: yellow;" *ngSwitchCase="'yellow'">yellow color</h2>
+  <h2 style="color: gray;" *ngSwitchDefault>gray color</h2>
+</div>
+
+<!-- For loop condition lessons -->
